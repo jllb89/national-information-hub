@@ -3,6 +3,8 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import styles from "./navbar.module.css";
+import Image from 'next/image';
+
 
 export default function Navbar() {
   const [scrollingDown, setScrollingDown] = useState(false);
