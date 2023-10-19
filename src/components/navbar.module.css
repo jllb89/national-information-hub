@@ -1,0 +1,251 @@
+@font-face {
+  font-family: 'light';
+  src: url('/fonts/SuisseIntl-Light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'regular';
+  src: url('/fonts/SuisseIntl-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'bold';
+  src: url('/fonts/SuisseIntl-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'ultra';
+  src: url('/public/fonts/SuisseIntl-Ultralight.otf') format('opentype');
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: none;
+  padding-top: 1rem;
+  transition: transform 1s;
+  z-index: 10;
+
+}
+
+.logo img {
+  height: 22px;
+}
+
+.links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.links li {
+  list-style: none;
+}
+
+.links a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'regular';
+  font-size: .8rem;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dropdownWrapper:hover .dropdownContent {
+  display: block;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #16161A;
+  outline: #fff .5px;
+  z-index: 1;
+  width: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-radius: 2rem;
+  animation: fadeIn .3s ease-in-out;
+  transform: translateY(2rem);
+  box-shadow: 0 0 0 0.5px rgba(255, 255, 255, 0.324);
+}
+
+.dropdownContent a {
+  color: #fff;
+  padding: 1rem 3rem;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  white-space: nowrap;
+}
+
+.dropdownContent a span {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdownContent a span::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  transition: width 0.4s ease-in-out;
+}
+
+.dropdownContent a:hover span::after {
+  width: 100%;
+}
+
+
+.dropdownContent::before {
+  content: "";
+  position: absolute;
+  top: -3rem;
+  left: 0;
+  right: 0;
+  height: 3rem;
+}
+
+
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+
+
+.loginButton {
+  background-color: #16161A;
+  border: none;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border-radius: 2rem;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.loginButton:hover {
+  box-shadow: 0 0 0 0.5px rgba(255, 255, 255, 0.324);
+}
+
+.loginButton a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.arrowIcon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.dropdownWrapper:hover .arrowIcon {
+  transform: rotate(90deg);
+}
+
+.navbar.hidden {
+  transform: translateY(-100%);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.menuButton {
+  display: none;
+  background-color: #16161A;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border-radius: 2rem;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.menuButton:hover {
+  box-shadow: 0 0 0 0.5px rgba(255, 255, 255, 0.324);
+}
+
+.menuOpen {
+  flex-direction: column;
+  z-index: 11;
+}
+
+.menuContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0; /* Default to 0 height */
+}
+
+.menuContainer.menuOpen {
+  height: 100%;
+}
+
+
+
+
+
+@media (max-width: 920px) {
+
+  .navbar {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+
+  .menuButton {
+    display: block;
+    max-width: calc(100% - 2rem);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    z-index: 2;
+  }
+
+  .links,
+  .loginButton {
+    display: none;
+  }
+
+  .links.menuOpen,
+  .loginButton.menuOpen {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding-top: 30rem;
+    align-items: flex-start;
+  }
+
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #16161A;
+  }
+
+
+}

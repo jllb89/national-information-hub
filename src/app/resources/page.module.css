@@ -1,0 +1,199 @@
+.categoriesHeader {
+    padding-top: 8rem;
+    padding-left: 8.5rem;
+}
+
+.resourcesHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-left: 8.5rem;
+    padding-right: 8.5rem;
+    padding-top: 1rem;
+  }
+  
+  .resourcesTitle {
+    font-size: 2rem;
+    margin-right: 1rem;
+    font-family: 'regular';
+    font-size: .8rem;
+    color: white;
+  }
+  
+  .divider {
+    flex-grow: .2;
+    height: .5px;
+    background-color: #ffffff63;
+  }
+
+  .mediaOuterContainer {
+    padding: 0 8.5rem;
+    padding-bottom: 2rem;
+    overflow: hidden;
+  }
+  
+  .mediaContainer {
+    width: 100%;
+    height: auto;
+    margin: 0;  
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    gap: 1.5rem;
+    white-space: nowrap;
+  }
+  
+  .mediaCard {
+    min-width: 500px;
+    max-width: 500px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff63;
+    border-radius: 1rem;
+    justify-content: flex-end;
+  }
+
+  .documentsCard{
+    min-width: 400px;
+    max-width: 400px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 1rem;
+  }
+
+  .eventsSection{
+    padding: 0 8.5rem;
+    padding-bottom: 2rem;
+    overflow: hidden;
+  }
+
+  .calendarCard {
+    min-width: 250px;
+    max-width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    background-color: #d9d9d909;
+    border-radius: 1rem;
+    border-color: #ffffff27;
+    border-style: solid;
+    border-width: .5px;
+    position: relative;
+  }
+
+  .calendarCard::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: inherit;
+    background: linear-gradient(to right, #9E00FF, #ff001e);
+    z-index: -1;
+}
+
+  .linksCard {
+    min-width: 400px;
+    max-width: 400px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #d9d9d909;
+    border-radius: 1rem;
+    justify-content:center;
+    border-color: #ffffff27;
+    border-style: solid;
+    border-width: .5px;
+  }
+
+  .articlesCard {
+    min-width: 400px;
+    max-width: 400px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #d9d9d909;
+    border-radius: 1rem;
+    justify-content:center;
+    border-color: #ffffff27;
+    border-style: solid;
+    border-width: .5px;
+  }
+
+  .articlesDate {
+    font-size: .7rem;
+    color: rgb(255, 255, 255);
+    font-family: "regular";
+  }
+  
+  .mediaTitle {
+    font-family: 'light';
+    font-size: 1.5rem;
+    color: white;
+    margin: 0;
+  }
+
+  .calendarDescription {
+    font-family: 'light';
+    font-size: 1.3rem;
+    color: white;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: -1rem;
+    line-height: 2rem;
+  }
+  
+  .mediaCategory {
+    font-size: .7rem;
+    color: rgb(255, 255, 255);
+    font-family: "regular";
+    padding-top: .7rem;
+  }
+  
+  .mediaDescription {
+    font-size: .8rem;
+    white-space: normal;
+    font-family: "light";
+    line-height: 1.4rem;
+    color: white;
+}
+
+.cardLink {
+    font-size: .7rem;
+    white-space: normal;
+    font-family: "regular";
+    line-height: 1.4rem;
+    background: linear-gradient(to right, #9E00FF, #ff001e);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    cursor: pointer;
+    padding-top: 1rem;
+}
+
+.calendarLink {
+  font-size: .7rem;
+    white-space: normal;
+    font-family: "regular";
+    background: linear-gradient(to right, #9E00FF, #ff001e);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    cursor: pointer;
+    padding-left: 2rem;
+}
