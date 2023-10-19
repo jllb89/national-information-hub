@@ -1,7 +1,7 @@
-import Navbar from '../../../components/Navbar';
-import Footer from '../../../components/Footer';
-import styles from '../page.module.css';
-import Link from 'next/link';
+import Navbar from "../../../components/Navbar";
+import Footer from "../../../components/Footer";
+import styles from "../page.module.css";
+import Link from "next/link";
 
 
 export default function Resources() {
@@ -30,7 +30,7 @@ export default function Resources() {
       subcategory: "Education",
       mediaCategory: "Video",
       backgroundImage: "/media-bg3.png",
-      videoTitle: "Techy Tot's First Computer",
+      videoTitle: "Techy Tot&apos;s First Computer",
       description: "Discover foundational computer skills through playful, engaging visuals aimed at introducing tots to the digital world.",
       file: "/videos/techy-tot.mp4"
     },
@@ -64,14 +64,14 @@ export default function Resources() {
       category: "Children & Families",
       subcategory: "Leisure",
       videoTitle: "Young Minds",
-      description: "Advocating for children's mental health with resources, support, and interventions.",
+      description: "Advocating for children&apos;s mental health with resources, support, and interventions.",
       link: "https://youngminds.org.uk/"
     },
     {
       category: "Children & Families",
       subcategory: "Leisure",
       videoTitle: "The Children’s Society",
-      description: "Engage with resources, insights, and support mechanisms, all geared towards championing children's rights and voices.",
+      description: "Engage with resources, insights, and support mechanisms, all geared towards championing children&apos;s rights and voices.",
       link: "https://www.childrenssociety.org.uk/"
     }
   ];
@@ -118,7 +118,7 @@ export default function Resources() {
       backgroundImage: "/ch-bg2.png",
       videoTitle: "The Importance of Play",
       author: "N/A",
-      description: "An article discussing the importance of play in children's education and development.",
+      description: "An article discussing the importance of play in children&apos;s education and development.",
       url: "https://www.childcareexchange.com/catalog/product/the-importance-of-play/3600496/"
     },
     {
@@ -213,7 +213,7 @@ export default function Resources() {
 
       <section className={styles.documentsSection}>
         <div className={styles.resourcesHeader}>
-          <span className={styles.resourcesTitle}>PDF's & Documents</span>
+          <span className={styles.resourcesTitle}>PDF&apos;s & Documents</span>
           <div className={styles.divider}></div>
         </div>
 

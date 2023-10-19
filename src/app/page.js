@@ -1,29 +1,30 @@
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import styles from './page.module.css';
-import Link from 'next/link';
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import styles from "./page.module.css";
+import Link from "next/link";
+import Image from 'next/image';
 
 
 export default function Home() {
 
   const cardData = [
     {
-      image: 'cf.png',
-      title: 'Children & Families',
-      description: 'A nurturing foundation for families and children, offering an expanse of resources spanning accommodation, health, education, and more. Find a myriad of opportunities, guidelines, and supportive mechanisms that seamlessly weave into the evolving needs of today’s families and children.',
-      link: '/resources/children-families'
+      image: "cf.png",
+      title: "Children & Families",
+      description: "A nurturing foundation for families and children, offering an expanse of resources spanning accommodation, health, education, and more. Find a myriad of opportunities, guidelines, and supportive mechanisms that seamlessly weave into the evolving needs of today’s families and children.",
+      link: "/resources/children-families"
     },
     {
-      image: 'asc.png',
-      title: 'Adults & Senior Care',
-      description: 'Tailored resources ensuring quality, support, and care for adults and seniors. Navigate through a dedicated hub providing integral information related to accommodation, health services, and legal matters, amidst others, ensuring a dignified, supported living at every stage.',
-      link: '/resources/adults-senior-care'
+      image: "asc.png",
+      title: "Adults & Senior Care",
+      description: "Tailored resources ensuring quality, support, and care for adults and seniors. Navigate through a dedicated hub providing integral information related to accommodation, health services, and legal matters, amidst others, ensuring a dignified, supported living at every stage.",
+      link: "/resources/adults-senior-care"
     },
     {
-      image: 'pr.png',
-      title: 'Professional Resources',
-      description: 'Your ally in professional development and resource access, the hub offers a plethora of information from research papers, guidance links, and training, to job and volunteering opportunities, crafting a unified platform for professionals across various domains.',
-      link: '/resources/professional-resources'
+      image: "pr.png",
+      title: "Professional Resources",
+      description: "Your ally in professional development and resource access, the hub offers a plethora of information from research papers, guidance links, and training, to job and volunteering opportunities, crafting a unified platform for professionals across various domains.",
+      link: "/resources/professional-resources"
     }
   ];
 
@@ -37,7 +38,7 @@ export default function Home() {
 
         <section className={styles.logoSection}>
           <div className={styles.logoContainer}>
-            <img src="/nih-logo.svg" alt="Logo" />
+            <Image src="/nih-logo.svg" alt="Logo" />
             <p>
               Stay informed with consistently updated resources, backed by the professionalism of our esteemed partners.<br />
               Experience accurate and authoritative insights, sourced exclusively from official institutes and organizations across the UK.
@@ -62,13 +63,13 @@ export default function Home() {
           <div className={styles.cardsContainer}>
             {cardData.map((card, index) => (
               <div className={styles.card} key={index}>
-                <img src={card.image} alt={card.title} className={styles.cardImage} />
+                <Image src={card.image} alt={card.title} className={styles.cardImage} />
                 <div className={styles.cardContent}>
                   <h2 className={styles.cardTitle}>{card.title}</h2>
                   <div className={styles.cardDivider}></div>
                   <p className={styles.cardDescription}>{card.description}</p>
                   <div className={styles.linkContainer}>
-                    <Link href={card.link} className={styles.cardLink}>Learn more <img src="/arrow-right.svg" alt="Arrow Right" /></Link>
+                    <Link href={card.link} className={styles.cardLink}>Learn more <Image src="/arrow-right.svg" alt="Arrow Right" /></Link>
                   </div>
                 </div>
               </div>

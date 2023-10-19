@@ -1,21 +1,21 @@
 @font-face {
-  font-family: 'light';
-  src: url('/fonts/SuisseIntl-Light.otf') format('opentype');
+  font-family: "light";
+  src: url("/fonts/SuisseIntl-Light.otf") format("opentype");
 }
 
 @font-face {
-  font-family: 'regular';
-  src: url('/fonts/SuisseIntl-Regular.otf') format('opentype');
+  font-family: "regular";
+  src: url("/fonts/SuisseIntl-Regular.otf") format("opentype");
 }
 
 @font-face {
-  font-family: 'bold';
-  src: url('/fonts/SuisseIntl-Bold.otf') format('opentype');
+  font-family: "bold";
+  src: url("/fonts/SuisseIntl-Bold.otf") format("opentype");
 }
 
 @font-face {
-  font-family: 'ultra';
-  src: url('/public/fonts/SuisseIntl-Ultralight.otf') format('opentype');
+  font-family: "ultra";
+  src: url("/public/fonts/SuisseIntl-Ultralight.otf") format("opentype");
 }
 
 .navbar {
@@ -50,7 +50,7 @@
 .links a {
   color: #fff;
   text-decoration: none;
-  font-family: 'regular';
+  font-family: "regular";
   font-size: .8rem;
   display: flex;
   align-items: center;

@@ -9,7 +9,7 @@
 
 .logoContainer p {
   margin-top: 2rem;
-  font-family: 'light';
+  font-family: "light";
   color: rgb(214, 214, 214);
   font-size: .9rem;
   line-height: 1.5rem;
@@ -40,7 +40,7 @@
 .resourcesTitle {
   font-size: 2rem;
   margin-right: 1rem;
-  font-family: 'regular';
+  font-family: "regular";
   font-size: .8rem;
   color: white;
 }
@@ -88,7 +88,7 @@
 .cardTitle {
   font-size: .7rem;
   margin-top: 0;
-  font-family: 'regular';
+  font-family: "regular";
   color: white;
   text-align: left;
 }
@@ -101,7 +101,7 @@
 
 .cardDescription {
   font-size: 0.8rem;
-  font-family: 'light';
+  font-family: "light";
   color: rgb(214, 214, 214);
   text-align: left;
   line-height: 1.1rem;
@@ -116,7 +116,7 @@
 .cardLink {
   color: #ffffff;
   text-decoration: none;
-  font-family: 'regular';
+  font-family: "regular";
   font-size: .7rem;
   text-align: left;
   display: flex;
@@ -185,7 +185,7 @@
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  font-family: 'regular';
+  font-family: "regular";
   font-size: .6rem;
 }
 
@@ -199,7 +199,7 @@
 }
 
 .calendarTitle {
-  font-family: 'light';
+  font-family: "light";
   font-size: 2rem;
   color: #ffffff;
   text-align: left;
@@ -209,7 +209,7 @@
 
 .calendarText {
   font-size: 0.8rem;
-  font-family: 'light';
+  font-family: "light";
   color: rgb(214, 214, 214);
   text-align: left;
   line-height: 1.5rem;
@@ -219,7 +219,7 @@
   grid-column: span 7;
   text-align: left;
   font-size: 1rem;
-  font-family: 'regular';
+  font-family: "regular";
   background: linear-gradient(to right, #9E00FF, #ff001e);
   background-clip: text;
   -webkit-background-clip: text;
@@ -230,7 +230,7 @@
 .linkClass {
   color: #ffffff;
   text-decoration: underline;
-  font-family: 'regular';
+  font-family: "regular";
   font-size: .8rem;
 }
 

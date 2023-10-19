@@ -1,8 +1,8 @@
-'use client'
+"use client"
 
-import { useState, useEffect } from 'react';
-import Link from 'next/link';
-import styles from './navbar.module.css';
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import styles from "./navbar.module.css";
 
 export default function Navbar() {
   const [scrollingDown, setScrollingDown] = useState(false);
@@ -17,9 +17,9 @@ export default function Navbar() {
       setAtBottom(currentScrollY + window.innerHeight >= document.body.scrollHeight);
       lastScrollY = currentScrollY;
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -29,17 +29,17 @@ export default function Navbar() {
 
   return (
     <>
-      <div className={`${styles.menuContainer} ${menuOpen ? styles.menuOpen : ''}`}>
-      <nav className={`${styles.navbar} ${scrollingDown ? styles.hidden : ''}`}>
+      <div className={`${styles.menuContainer} ${menuOpen ? styles.menuOpen : ""}`}>
+      <nav className={`${styles.navbar} ${scrollingDown ? styles.hidden : ""}`}>
         <div className={styles.logo}>
           <Link href="/">
-            <img src="/nih-logo.svg" alt="Logo" />
+            <Image src="/nih-logo.svg" alt="Logo" />
           </Link>
         </div>
         <button className={styles.menuButton} onClick={toggleMenu}>
-          {menuOpen ? 'Close' : 'Menu'}
+          {menuOpen ? "Close" : "Menu"}
         </button>
-        <ul className={`${styles.links} ${menuOpen ? styles.menuOpen : ''}`}>
+        <ul className={`${styles.links} ${menuOpen ? styles.menuOpen : ""}`}>
           <li className={styles.dropdown}>
             <div className={styles.dropdownWrapper}>
               <Link href="/resources">

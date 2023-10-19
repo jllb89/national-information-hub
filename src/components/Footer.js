@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import styles from './footer.module.css';
+import Link from "next/link";
+import styles from "./footer.module.css";
 
 export default function Footer(){
   return (
@@ -7,7 +7,7 @@ export default function Footer(){
       <div className={styles.footerContainer}>
       <div className={styles.column}>
         <Link href="/">
-          <img src="/nih-logo.svg" alt="Logo" />
+          <Image src="/nih-logo.svg" alt="Logo" />
         </Link>
       </div>
       <div className={styles.column}>
@@ -24,10 +24,10 @@ export default function Footer(){
         <Link href="/resources/professional-resources">Professional Resources</Link>
       </div>
       <div className={styles.column}>
-        <img src="/facebook.svg" alt="Social Icon 1" />
-        <img src="/youtube.svg" alt="Social Icon 2" />
-        <img src="/twitter.svg" alt="Social Icon 3" />
-        <img src="/linkedin.svg" alt="Social Icon 4" />
+        <Image src="/facebook.svg" alt="Social Icon 1" />
+        <Image src="/youtube.svg" alt="Social Icon 2" />
+        <Image src="/twitter.svg" alt="Social Icon 3" />
+        <Image src="/linkedin.svg" alt="Social Icon 4" />
         </div>
       </div>
     </footer>

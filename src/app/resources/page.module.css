@@ -15,7 +15,7 @@
   .resourcesTitle {
     font-size: 2rem;
     margin-right: 1rem;
-    font-family: 'regular';
+    font-family: "regular";
     font-size: .8rem;
     color: white;
   }
@@ -142,14 +142,14 @@
   }
   
   .mediaTitle {
-    font-family: 'light';
+    font-family: "light";
     font-size: 1.5rem;
     color: white;
     margin: 0;
   }
 
   .calendarDescription {
-    font-family: 'light';
+    font-family: "light";
     font-size: 1.3rem;
     color: white;
     padding-left: 2rem;

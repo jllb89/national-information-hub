@@ -1,8 +1,8 @@
-import './globals.css'
+import "./globals.css"
 
 export const metadata = {
-  title: 'National Information Hub',
-  description: 'National Information Hub',
+  title: "National Information Hub",
+  description: "National Information Hub",
 }
 
 export default function RootLayout({ children }) {
